@@ -1,0 +1,19 @@
+# dsh-wsl-wslconfig
+
+DeepSeek Harness 插件：只读建议 Windows .wslconfig 的内存上限与 mirrored networking。
+
+配套 **[dsh-wsl-kit](https://github.com/173787247/dsh-wsl-kit)**。
+
+[English → README.md](./README.md)
+
+## 安装
+
+```sh
+dsh plugin --profile web add github:173787247/dsh-wsl-wslconfig
+```
+
+重启 `dsh web` 并开**新**会话。工具名：`wslconfig_hint`。
+
+## 许可
+
+MIT

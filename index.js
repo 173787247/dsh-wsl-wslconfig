@@ -11,12 +11,12 @@ export function apply(ctx, config = {}) {
   ctx.systemPrompt.section({
     name: "tool:wslconfig_hint",
     order: 123,
-    text: "Use wslconfig_hint for WSL/Windows interop: Read-only advice for .wslconfig memory/mirrored networking.",
+    text: "Use wslconfig_hint before fixing Windows↔WSL networking: reads %UserProfile%\\.wslconfig (mirrored/memory) and reminds that dsh UI uses :3081 relay — never --host 0.0.0.0.",
   });
 
   ctx.tools.register({
     name: "wslconfig_hint",
-    description: "Read-only advice for .wslconfig memory/mirrored networking.",
+    description: "Read-only parse of Windows .wslconfig (networkingMode/memory) plus mirrored vs NAT advice for dsh :3081.",
     parameters: core.parameters(config),
     output: {
       schema: core.outputSchema(),

@@ -1,7 +1,7 @@
 {
   "name": "dsh-wsl-wslconfig",
-  "version": "0.1.0",
-  "description": "Read-only advice for .wslconfig memory/mirrored networking.",
+  "version": "0.2.0",
+  "description": "Parse Windows .wslconfig and advise mirrored/NAT + dsh :3081 relay.",
   "license": "MIT",
   "repository": {
     "type": "git",

@@ -5,6 +5,18 @@ DeepSeek Harness tool: **`wslconfig_hint`** — read-only parse of Windows `.wsl
 
 [中文说明 → README.zh.md](./README.zh.md)
 
+## Where it sits
+
+Reads Windows .wslconfig and says whether mirrored or NAT networking matches the :3081 relay.
+
+```mermaid
+flowchart LR
+  agent["dsh agent"] --> tool["wslconfig_hint"] --> cfg[".wslconfig mirrored or NAT"]
+```
+
+Suite diagram and version snapshot: [dsh-wsl-kit](https://github.com/173787247/dsh-wsl-kit#how-the-pieces-fit). This plugin is **0.2.0** (full). Do not copy that matrix into this README.
+
+
 ## Compatibility
 
 | Field | Value |

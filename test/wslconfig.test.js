@@ -47,10 +47,10 @@ describe("buildWslconfigAdvice", () => {
 describe("resolveWslconfigPath", () => {
   it("prefers WINDOWS_USER path when present", () => {
     const { path } = resolveWslconfigPath({
-      env: { WINDOWS_USER: "rchua" },
-      exists: (p) => p.includes("/rchua/.wslconfig"),
+      env: { WINDOWS_USER: "tester" },
+      exists: (p) => p.includes("/tester/.wslconfig"),
     });
-    assert.equal(path, "/mnt/c/Users/rchua/.wslconfig");
+    assert.equal(path, "/mnt/c/Users/tester/.wslconfig");
   });
 });
 
